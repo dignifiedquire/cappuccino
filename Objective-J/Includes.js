@@ -28,31 +28,32 @@
 
 #define GLOBAL(name) name
 
-#include "OldBrowserCompatibility.js"
-#include "DebugOptions.js"
-#include "json2.js"
-#include "sprintf.js"
-#include "CPLog.js"
-#include "Constants.js"
-#include "EventDispatcher.js"
-#include "CFHTTPRequest.js"
-#include "CFPropertyList.js"
-#include "CFDictionary.js"
-#include "CFData.js"
-#include "CFURL.js"
-#include "MarkedStream.js"
-#include "CFBundle.js"
-#include "StaticResource.js"
-#include "Preprocessor.js"
-#include "acorn.js"
-#include "acornwalk.js"
-#include "ObjJAcornCompiler.js"
-#include "FileDependency.js"
-#include "Executable.js"
-#include "FileExecutable.js"
-#include "Runtime.js"
-#include "Eval.js"
-#if defined(DEBUG) || defined(COMMONJS)
-#include "Debug.js"
-#endif
-#include "Bootstrap.js"
+#include("OldBrowserCompatibility.js")
+#include("DebugOptions.js")
+#include("json2.js")
+#include("sprintf.js")
+#include("CPLog.js")
+#include("Constants.js")
+#include("EventDispatcher.js")
+#include("CFHTTPRequest.js")
+#include("CFPropertyList.js")
+#include("CFDictionary.js")
+#include("CFData.js")
+#include("CFURL.js")
+#include("MarkedStream.js")
+#include("CFBundle.js")
+#include("StaticResource.js")
+#include("Preprocessor.js")
+#include("acorn.js")
+#include("acornwalk.js")
+#include("ObjJAcornCompiler.js")
+#include("FileDependency.js")
+#include("Executable.js")
+#include("FileExecutable.js")
+#include("Runtime.js")
+#include("Eval.js")
+// TODO
+//#if defined(DEBUG) || defined(COMMONJS)
+//# include("Debug.js")
+//#endif
+#include("Bootstrap.js")

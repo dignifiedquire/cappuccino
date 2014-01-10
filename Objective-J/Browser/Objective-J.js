@@ -3,5 +3,5 @@ var ObjectiveJ = { };
 
 (function (global, exports)
 {
-#include "Includes.js"
+#include("../Includes.js")
 })(window, ObjectiveJ);

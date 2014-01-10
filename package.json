@@ -1,0 +1,23 @@
+{
+  "name": "cappuccino",
+  "version": "0.0.1",
+  "description": "Welcome to Cappuccino! ======================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cappuccino/cappuccino.git"
+  },
+  "author": "Friedel Ziegelmayer <dignifiedquire@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cappuccino/cappuccino/issues"
+  },
+  "homepage": "https://github.com/cappuccino/cappuccino",
+  "devDependencies": {
+    "grunt-include-replace": "~1.2.0",
+    "grunt": "~0.4.2"
+  }
+}
