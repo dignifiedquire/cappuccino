@@ -8,11 +8,18 @@ module.exports = (grunt) ->
         prefix: '#'
       objectivej:
         files: [
-          src: ['Objective-J/Includes.js', 'Objective-J/Browser/Objective-J.js']
+          src: 'Objective-J/Includes.js'
+          dest: DEST_DIR
+        ]
+    objjc:
+      objectivej:
+        files: [
+          src: "#{DEST_DIR}/Objective-J/Browser/Objective-J.js"
           dest: DEST_DIR
         ]
 
-
   grunt.loadNpmTasks 'grunt-include-replace'
-  grunt.registerTask 'objectivej', ['includereplace']
+  grunt.loadTasks 'tasks'
+
+  grunt.registerTask 'objectivej', ['includereplace:objectivej', 'objjc:objectivej']
   grunt.registerTask 'default', ['objectivej']
